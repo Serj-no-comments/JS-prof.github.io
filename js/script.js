@@ -1,3 +1,4 @@
+
 class ProductList{
         constructor(container ='.products'){
             this.container=container;
@@ -46,6 +47,7 @@ class ProductItem{
                 <h3 class="products__item-text">${this.title}</h3>
                 <p class="products__item-price">${this.price}</p>
                 <button class="products__item-button" class="buy-btn">Купить</button>
+
             </div>`
     }
 
