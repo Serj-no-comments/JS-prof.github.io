@@ -96,17 +96,18 @@
   padding: 5px;
 }
 
-.cart {
+.cart-block {
   position: absolute;
-  top: 8%;
+  top: 15%;
   right: 2%;
 }
 
-.cart__item {
+.cart-item {
   max-width: 360px;
   background-color: #f1bf72;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .cart__item-image {
@@ -114,7 +115,7 @@
   max-height: 150px;
 }
 
-.cart__item-text {
+.cart-title {
   text-transform: uppercase;
   color: blanchedalmond;
   padding: 10px;

@@ -10,7 +10,7 @@
 <body>
     <div id="apper">
         <header>
-            <section class="head">
+            <!-- <section class="head">
                 <h2 class="head__text">e-shop</h2>
                 <div class="head__left">
                     <form action="#" class="search-form" @submit.prevent="filter">
@@ -39,12 +39,19 @@
                     </div>
                 </div>
                 
+            </section> -->
+            <section class="head">
+                <div class="head__text">e-shop</div>
+                <div class="cart head__left">
+                    <filter_el></filter_el>
+                    <cart ref="cart"></cart>
+                </div>
             </section>
             
     
         </header>
         <main>
-            <div class="products container">
+            <!-- <div class="products container">
                 <div class="product-item" v-for="product of filtered" :key="product.id_product">
                     <img class="products__item-image" src="./image/notebook.jpg" alt="Some img">
                     <h3 class="products__item-text">{{product.product_name}}</h3>
@@ -53,13 +60,17 @@
                     
                 </div>
             </div>
-    
+     -->    
+
+            <products ref="products"></products>
+
         </main>
-        <footer>
-            
-        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="./js/script.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="js/CartComp.js"></script>
+    <script src="js/ProdComp.js"></script>
+    <script src="js/FilterComp.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

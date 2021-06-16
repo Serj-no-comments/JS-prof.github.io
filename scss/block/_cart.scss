@@ -1,14 +1,17 @@
 .cart {
-    position: absolute;
-    top: 8%;
-    right: 2%;
+    
+    &-block{
+        position: absolute;
+        top: 15%;
+        right: 2%;
+    }
 
-
-    &__item {
+    &-item {
         max-width: 360px;
         background-color: rgb(241, 191, 114);
         margin: 0 auto;
         text-align: center;
+        margin-bottom: 10px;
     }
 
     &__item-image {
@@ -16,7 +19,7 @@
         max-height: 150px;
     }
 
-    &__item-text {
+    &-title {
         text-transform: uppercase;
         color: blanchedalmond;
         padding: 10px;
