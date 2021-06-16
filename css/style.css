@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.invinsible {
+  display: none;
+}
+
 .head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,16 +27,35 @@
   padding: 10px;
 }
 
-.head__button {
+.head__left {
+  padding: 10px;
+}
+
+.head__left-menu {
   border: 1px solid #ffa011;
   background-color: bisque;
   text-transform: uppercase;
   color: burlywood;
-  margin: 10px;
   border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  padding: 12px;
 }
 
-.product {
+.head__left-cart {
+  border: 1px solid #ffa011;
+  background-color: bisque;
+  text-transform: uppercase;
+  color: burlywood;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  padding: 12px;
+}
+
+.products {
   margin: 20px auto;
   display: -ms-grid;
   display: grid;
@@ -41,29 +64,29 @@
   grid-gap: 10px;
 }
 
-.product__item {
+.products__item {
   max-width: 360px;
   background-color: #f1bf72;
   margin: 0 auto;
 }
 
-.product__item-image {
+.products__item-image {
   max-width: 360px;
   max-height: 300px;
 }
 
-.product__item-text {
+.products__item-text {
   text-transform: uppercase;
   color: blanchedalmond;
   padding: 10px;
 }
 
-.product__item-price {
+.products__item-price {
   color: blanchedalmond;
   padding: 0 10px;
 }
 
-.product__item-button {
+.products__item-button {
   border: 1px solid #ffa011;
   background-color: bisque;
   text-transform: uppercase;
@@ -71,5 +94,43 @@
   margin: 10px;
   border-radius: 5px;
   padding: 5px;
+}
+
+.cart-block {
+  position: absolute;
+  top: 15%;
+  right: 2%;
+}
+
+.cart-item {
+  max-width: 360px;
+  background-color: #f1bf72;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.cart__item-image {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.cart-title {
+  text-transform: uppercase;
+  color: blanchedalmond;
+  padding: 10px;
+}
+
+.cart__item-price {
+  color: blanchedalmond;
+  padding: 0 10px;
+}
+
+.cart__item-delete {
+  margin-bottom: 10px;
+  background-color: bisque;
+  border: 1px solid #ffa011;
+  color: burlywood;
+  width: 50px;
 }
 /*# sourceMappingURL=style.css.map */

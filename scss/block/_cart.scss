@@ -1,0 +1,41 @@
+.cart {
+    
+    &-block{
+        position: absolute;
+        top: 15%;
+        right: 2%;
+    }
+
+    &-item {
+        max-width: 360px;
+        background-color: rgb(241, 191, 114);
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &__item-image {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    &-title {
+        text-transform: uppercase;
+        color: blanchedalmond;
+        padding: 10px;
+    }
+
+    &__item-price {
+        color: blanchedalmond;
+        padding: 0 10px;
+    }
+
+    &__item-delete {
+        margin-bottom: 10px;
+        background-color: bisque;
+        border: 1px solid rgb(255, 160, 17);
+        color: burlywood;
+        width: 50px;
+    }
+
+}
