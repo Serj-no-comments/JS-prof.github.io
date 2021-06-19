@@ -1,11 +1,11 @@
-.head{
+.head {
     display: flex;
     justify-content: space-between;
     background-color: rgb(245, 177, 89);
     min-height: 35px;
     border-radius: 5px;
-    
-    &__text{
+
+    &__text {
         font-size: 14px;
         font-weight: 400;
         text-transform: uppercase;
@@ -13,13 +13,31 @@
         padding: 10px;
     }
 
-    &__button{
+
+    &__left {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 100px);
+        grid-gap: 5px;
+    }
+
+    &__left-menu {
         border: 1px solid rgb(255, 160, 17);
         background-color: bisque;
         text-transform: uppercase;
         color: burlywood;
-        margin: 10px;
+
         border-radius: 5px;
+        font-size: 14px;
     }
 
+    &__left-cart {
+        border: 1px solid rgb(255, 160, 17);
+        background-color: bisque;
+        text-transform: uppercase;
+        color: burlywood;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 14px;
+    }
 }
