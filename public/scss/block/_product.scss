@@ -1,0 +1,39 @@
+.products {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 360px);
+    grid-gap: 10px;
+
+    &__item {
+        max-width: 360px;
+        background-color: bisque;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__item-image {
+        max-width: 360px;
+        max-height: 300px;
+    }
+
+    &__item-text {
+        text-transform: uppercase;
+        color: rgb(228, 159, 56);
+        padding: 10px;
+    }
+
+    &__item-price {
+        color: rgb(228, 158, 54);
+        padding: 0 10px;
+    }
+
+    &__item-button {
+        border: 1px solid rgb(255, 160, 17);
+        
+        text-transform: uppercase;
+        color: burlywood;
+        margin: 10px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+}

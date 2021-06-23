@@ -37,20 +37,21 @@ Vue.component('products', {
         v-for="product of filtered" 
         :key="product.id_product"
         :product="product"
-        :img="item.imgCart"></product>
+        :img="product.imgProduct"
+        ></product>
         
     </div>
     `
 })
 
 Vue.component('product',{
-    props: [ 'product', 'image'],
-    template: `<div class="product-item">
-                        <img class="products__item-image" :src="image" alt="Some img">
+    props: [ 'product', 'img'],
+    template: `<div class="products__item">
+                        <img class="products__item-image" :src="img" alt="Some img">
                         <div class="desc">
-                            <h3>{{ product.product_name }}</h3>
-                            <p>{{ product.price }} $</p>
-                            <button class="buy-btn" @click="$root.$refs.cart.addProduct(product)">Купить</button>
+                            <h3 class="products__item-text">{{ product.product_name }}</h3>
+                            <p class="products__item-price">{{ product.price }} $</p>
+                            <button class="products__item-button" @click="$root.$refs.cart.addProduct(product)">Купить</button>
                         </div>
                     </div>`
 })

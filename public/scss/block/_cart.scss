@@ -1,9 +1,12 @@
 .cart {
+    border: none;
     
-    &-block{
+
+    &__block{
         position: absolute;
         top: 15%;
         right: 2%;
+        background-color: bisque;
     }
 
     &-item {

@@ -1,5 +1,38 @@
 {
     "amount": 46600,
     "countGoods": 2,
-    "contents": []
+    "contents": [
+        {
+            "quantity": 21,
+            "id_product": 792,
+            "product_name": "Геймпад",
+            "price": 3700,
+            "imgProduct": "./image/gamepad.jpg",
+            "imgCart": "./image/gamepad.jpg"
+        },
+        {
+            "quantity": 10,
+            "id_product": 278,
+            "product_name": "Клавиатура",
+            "price": 1600,
+            "imgProduct": "./image/keyboard.jpg",
+            "imgCart": "./image/keyboard.jpg"
+        },
+        {
+            "quantity": 7,
+            "id_product": 200,
+            "product_name": "Мышка",
+            "price": 1000,
+            "imgProduct": "./image/mouse.jpg",
+            "imgCart": "./image/mouse.jpg"
+        },
+        {
+            "quantity": 1,
+            "id_product": 100,
+            "product_name": "Ноутбук",
+            "price": 45600,
+            "imgProduct": "./image/notebook.jpg",
+            "imgCart": "./image/notebook.jpg"
+        }
+    ]
 }

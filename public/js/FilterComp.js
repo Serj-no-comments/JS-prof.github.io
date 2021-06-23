@@ -5,10 +5,10 @@ Vue.component('filter_el',{
         }
     },
     template: `
-    <form action="#" class="search-form" @submit.prevent='$parent.$refs.products.filter(userSearch)'>
-        <input type="text" class="search-field" v-model='userSearch'>
-        <button class="btn-search" type="submit">
-            <i class="fas fa-search">Найти</i>
+    <form action="#" class="filter" @submit.prevent='$parent.$refs.products.filter(userSearch)'>
+        <input type="text" class="filter__input" v-model='userSearch'>
+        <button class="filter__button" type="submit">
+            <i class="filter__button-text">Найти</i>
         </button>
     </form>
     `

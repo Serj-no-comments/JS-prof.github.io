@@ -2,31 +2,32 @@
 Vue.component('cart',{
     data () {
         return {
-            cartUrl: '/getBasket.json',
-            imgCart: 'https://placehold.it/50x100',
             cartShown: false,
             cartItems: []
         }
     },
     methods: {
         addProduct (product) {
-            this.$parent.getJson(`${API}/addToBasket.json`)
-            .then(data => {
-                if(data.result){
-                    let find = this.cartItems.find(el => el.id_product === product.id_product);
-                    if(find){
-                        find.quantity++;
-                    } else {
-                        let prod = Object.assign ({quantity: 1}, product)
-                        this.cartItems.push (prod)
-                    }
-                } else {
-                    console.log('Some error')
-                }
-            })
-        }, 
+            let find = this.cartItems.find( el => el.id_product === product.id_product );
+            if ( find ) {
+                this.$parent.putJson( `/api/cart/${ product.id_product }/${ product.product_name }`, { quantity: 1 } )
+                    .then( data => {
+                        if ( data.result ) {
+                            find.quantity++;
+                        }
+                    } )
+            } else {
+                let prod = Object.assign( { quantity: 1 }, product );
+                this.$parent.postJson( `api/cart/${ product.id_product }/${ product.product_name }`, prod )
+                    .then( data => {
+                        if ( data.result ) {
+                            this.cartItems.push( prod );
+                        }
+                    } )
+            }
+        },
         remove (product) {
-            this.$parent.getJson(`${API}/deleteFromBasket.json`)
+            this.$parent.getJson(`/api/cart/`)
             .then(data => {
                 if(data.result){
                     if (product.quantity > 1) {
@@ -42,31 +43,31 @@ Vue.component('cart',{
     mounted () {
         this.$parent.getJson(`/api/cart`)
         .then(data => {
-            for(let el of data){
+            for(let el of data.contents){
                 this.cartItems.push(el);
             }
         })
     },
     template: `
     <div>
-        <button class="btn-cart" type="button" @click="cartShown = !cartShown">Корзина</button>
-        <div class="cart-block" v-show="cartShown">
+        <button class="cart " type="button" @click="cartShown = !cartShown">Корзина</button>
+        <div class="cart__block " v-show="cartShown">
             <p v-if="!cartItems.length">В корзине нет товаров</p>
-            <cart-item v-for="product of cartItems"
+            <cart-item v-for="item of cartItems"
             :key="product.id_product"
             :cart_item="product"
-            :img="item.imgCart"></cart-item>
+            :img="item.imgCart"
+            </cart-item>
             
         </div>
-    </div>
-    `
+    </div>`
 })
 const cartItem = {
     props: ['cart_item'],
     template: `
             <div class="cart-item">
                 <div class="product-bio">
-                    <img class="products__item-image" src="./image/notebook.jpg" alt="Some image">
+                    <img class="products__item-image" :src="img" alt="Some image">
                     <div class="product-desc">
                         <p class="product-title">{{ cart_item.product_name }}</p>
                         <p class="product-quantity">Quantity: {{ cart_item.quantity }}</p>
@@ -75,7 +76,7 @@ const cartItem = {
                 </div>
                 <div class="right-block">
                     <p class="product-price">{{ cart_item.quantity * cart_item.price }}</p>
-                    <button class="del-btn" @click="$root.$refs.cart.remove(cart_item)">&times;</button>
+                    <button class="del-btn" @click="$emit('remove', cartItem)">&times;</button>
                 </div>
             </div>
         `

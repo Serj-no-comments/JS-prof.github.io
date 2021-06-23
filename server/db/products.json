@@ -2,28 +2,28 @@
     "id_product": 100,
     "product_name": "Ноутбук",
     "price": 45600,
-    "imgProduct": "./image/notebook.png",
-    "imgCart": "./image/notebook.png"
+    "imgProduct": "./image/notebook.jpg",
+    "imgCart": "./image/notebook.jpg"
   },
   {
     "id_product": 200,
     "product_name": "Мышка",
     "price": 1000,
-    "imgProduct": "./image/mouse.png",
-    "imgCart": "./image/mouse.png"
+    "imgProduct": "./image/mouse.jpg",
+    "imgCart": "./image/mouse.jpg"
   },
   {
     "id_product": 278,
     "product_name": "Клавиатура",
     "price": 1600,
-    "imgProduct": "./image/keyboard.png",
-    "imgCart": "./image/keyboard.png"
+    "imgProduct": "./image/keyboard.jpg",
+    "imgCart": "./image/keyboard.jpg"
   },
   {
     "id_product": 792,
     "product_name": "Геймпад",
     "price": 3700,
-    "imgProduct": "./image/gamepad.png",
-    "imgCart": "./image/gamepad.png"
+    "imgProduct": "./image/gamepad.jpg",
+    "imgCart": "./image/gamepad.jpg"
   }
 ]

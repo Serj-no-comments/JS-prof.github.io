@@ -1,12 +1,3 @@
-.container {
-  width: 1500px;
-  margin: 0 auto;
-}
-
-.invinsible {
-  display: none;
-}
-
 .head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,15 +11,18 @@
 }
 
 .head__text {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffe6bf;
   padding: 10px;
 }
 
 .head__left {
-  padding: 10px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .head__left-menu {
@@ -37,10 +31,7 @@
   text-transform: uppercase;
   color: burlywood;
   border-radius: 5px;
-  text-decoration: none;
   font-size: 14px;
-  text-align: center;
-  padding: 12px;
 }
 
 .head__left-cart {
@@ -51,8 +42,6 @@
   border-radius: 5px;
   text-decoration: none;
   font-size: 14px;
-  text-align: center;
-  padding: 12px;
 }
 
 .products {
@@ -66,8 +55,9 @@
 
 .products__item {
   max-width: 360px;
-  background-color: #f1bf72;
+  background-color: bisque;
   margin: 0 auto;
+  text-align: center;
 }
 
 .products__item-image {
@@ -77,18 +67,17 @@
 
 .products__item-text {
   text-transform: uppercase;
-  color: blanchedalmond;
+  color: #e49f38;
   padding: 10px;
 }
 
 .products__item-price {
-  color: blanchedalmond;
+  color: #e49e36;
   padding: 0 10px;
 }
 
 .products__item-button {
   border: 1px solid #ffa011;
-  background-color: bisque;
   text-transform: uppercase;
   color: burlywood;
   margin: 10px;
@@ -96,41 +85,25 @@
   padding: 5px;
 }
 
-.cart-block {
-  position: absolute;
-  top: 15%;
-  right: 2%;
+.filter {
+  padding-right: 10px;
 }
 
-.cart-item {
-  max-width: 360px;
-  background-color: #f1bf72;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 10px;
+.filter__input {
+  border: none;
+  background-color: #f5b159;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  outline: none;
 }
 
-.cart__item-image {
-  max-width: 150px;
-  max-height: 150px;
+.filter__button {
+  background-color: wheat;
+  border: 2px solid white;
 }
 
-.cart-title {
+.filter__button-text {
+  color: #e49f38;
   text-transform: uppercase;
-  color: blanchedalmond;
-  padding: 10px;
-}
-
-.cart__item-price {
-  color: blanchedalmond;
-  padding: 0 10px;
-}
-
-.cart__item-delete {
-  margin-bottom: 10px;
-  background-color: bisque;
-  border: 1px solid #ffa011;
-  color: burlywood;
-  width: 50px;
 }
 /*# sourceMappingURL=style.css.map */

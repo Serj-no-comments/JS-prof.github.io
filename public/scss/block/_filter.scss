@@ -1,0 +1,19 @@
+.filter{
+    padding-right: 10px;
+    &__input{
+        border: none;
+        background-color: rgb(245, 177, 89);
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+        outline: none;
+    }
+
+    &__button{
+        background-color: wheat;
+        border: 2px solid white;
+    }
+    &__button-text{
+        color: rgb(228, 159, 56);
+        text-transform: uppercase;
+    }
+}
