@@ -3,7 +3,7 @@
     "countGoods": 2,
     "contents": [
         {
-            "quantity": 21,
+            "quantity": 1,
             "id_product": 792,
             "product_name": "Геймпад",
             "price": 3700,
@@ -11,7 +11,7 @@
             "imgCart": "./image/gamepad.jpg"
         },
         {
-            "quantity": 10,
+            "quantity": 1,
             "id_product": 278,
             "product_name": "Клавиатура",
             "price": 1600,
@@ -19,7 +19,7 @@
             "imgCart": "./image/keyboard.jpg"
         },
         {
-            "quantity": 7,
+            "quantity": 1,
             "id_product": 200,
             "product_name": "Мышка",
             "price": 1000,

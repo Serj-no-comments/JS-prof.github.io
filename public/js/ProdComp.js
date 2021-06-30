@@ -1,9 +1,9 @@
 
 
+
 Vue.component('products', {
     data () {
         return {
-            catalogUrl: '/catalogData.json',
             products: [],
             filtered: []
         }

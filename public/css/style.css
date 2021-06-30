@@ -83,6 +83,7 @@
   margin: 10px;
   border-radius: 5px;
   padding: 5px;
+  cursor: pointer;
 }
 
 .filter {
@@ -100,6 +101,7 @@
 .filter__button {
   background-color: wheat;
   border: 2px solid white;
+  cursor: pointer;
 }
 
 .filter__button-text {

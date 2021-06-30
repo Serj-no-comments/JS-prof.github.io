@@ -1,6 +1,6 @@
 .cart {
     border: none;
-    
+    cursor: pointer;
 
     &__block{
         position: absolute;
@@ -9,7 +9,7 @@
         background-color: bisque;
     }
 
-    &-item {
+    &__item {
         max-width: 360px;
         background-color: rgb(241, 191, 114);
         margin: 0 auto;

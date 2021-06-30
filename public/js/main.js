@@ -1,6 +1,6 @@
 // const API = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
 
-let app = new Vue({
+let apper = new Vue({
     el: '#apper',
     // data: {
     //     catalogUrl: '/catalogData.json',
